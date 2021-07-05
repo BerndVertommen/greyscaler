@@ -29,3 +29,7 @@ jobs:
         working-directory: ./greyscaler
       - run: npm run generate --if-present
         working-directory: ./greyscaler
+      - uses: actions/upload-artifact@v2
+        with:
+          name: greyscaler-artifact
+          path: ./greyscaler/dist/ # or path/to/artifact
