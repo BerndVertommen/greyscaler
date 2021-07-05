@@ -25,6 +25,7 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - run: cd greyscaler | ls
       - run: npm install
+        working-directory: ./greyscaler
       - run: npm run generate --if-present
+        working-directory: ./greyscaler
