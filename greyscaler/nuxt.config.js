@@ -39,5 +39,10 @@ export default {
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+  vue: {
+    config: {
+      devtools: true // Should not be enabeled in prod. Using this for debugging atm
+    }
+  }
 };
