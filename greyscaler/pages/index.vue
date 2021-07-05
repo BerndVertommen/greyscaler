@@ -10,11 +10,7 @@
       <b-col cols="12">
         <b-card bg-variant="dark" text-variant="white" title="Stap 1">
           <b-card-text>
-            <b-form-group
-              id="selectFileFG"
-              label="Selecteer een afbeelding"
-              label-for="fileSelectInput"
-            >
+            <b-form-group id="selectFileFG" label-for="fileSelectInput">
               <b-form-file
                 id="fileSelectInput"
                 v-model="selectedFile"
