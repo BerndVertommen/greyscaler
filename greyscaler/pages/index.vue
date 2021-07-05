@@ -108,6 +108,7 @@ export default class HomePage extends Vue {
     this.selectedImagePath = URL.createObjectURL(file);
 
     setTimeout(() => {
+      console.log("Image selected");
       this.imageToGreyScale();
     }, 1000);
   }
